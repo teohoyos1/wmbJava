@@ -1,7 +1,7 @@
 package com.wmb.project.persistence;
 
 import com.wmb.project.domain.Payment_categoryD;
-import com.wmb.project.domain.dto.repository.Payment_categoryDRepository;
+import com.wmb.project.domain.repository.Payment_categoryDRepository;
 import com.wmb.project.persistence.crud.PaymentCategoryCrudRepository;
 import com.wmb.project.persistence.entity.Payment_category;
 import com.wmb.project.persistence.mapper.PaymentCategoryMapper;

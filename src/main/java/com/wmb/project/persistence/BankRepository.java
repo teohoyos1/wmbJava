@@ -1,7 +1,7 @@
 package com.wmb.project.persistence;
 
 import com.wmb.project.domain.BankD;
-import com.wmb.project.domain.dto.repository.BankDRepository;
+import com.wmb.project.domain.repository.BankDRepository;
 import com.wmb.project.persistence.crud.BankCrudRepository;
 import com.wmb.project.persistence.entity.Bank;
 import com.wmb.project.persistence.mapper.BankMapper;

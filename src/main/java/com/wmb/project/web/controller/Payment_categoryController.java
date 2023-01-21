@@ -1,7 +1,7 @@
 package com.wmb.project.web.controller;
 
 import com.wmb.project.domain.Payment_categoryD;
-import com.wmb.project.domain.dto.repository.Payment_categoryDRepository;
+import com.wmb.project.domain.repository.Payment_categoryDRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

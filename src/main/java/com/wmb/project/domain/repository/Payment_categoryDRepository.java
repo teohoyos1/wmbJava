@@ -1,4 +1,4 @@
-package com.wmb.project.domain.dto.repository;
+package com.wmb.project.domain.repository;
 
 import com.wmb.project.domain.Payment_categoryD;
 
