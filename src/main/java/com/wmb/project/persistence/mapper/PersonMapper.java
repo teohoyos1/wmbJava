@@ -27,7 +27,6 @@ public interface PersonMapper {
     @InheritInverseConfiguration
     @Mappings({
             @Mapping(target = "wallet", ignore = true),
-            @Mapping(target = "integration", ignore = true),
     })
     Person toPerson(PersonD personD);
 
