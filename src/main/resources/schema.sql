@@ -73,10 +73,6 @@ CREATE TABLE IF NOT EXISTS Integration
     log_id varchar (200),
     creation_date timestamp without time zone NOT NULL,
     step varchar (100),
-	id_person INTEGER NOT NULL,
     PRIMARY KEY (id),
-	CONSTRAINT fk_person
-      FOREIGN KEY(id_person)
-	  REFERENCES Person(id)
-	  ON DELETE CASCADE
+
 );
