@@ -73,6 +73,5 @@ CREATE TABLE IF NOT EXISTS Integration
     log_id varchar (200),
     creation_date timestamp without time zone NOT NULL,
     step varchar (100),
-    PRIMARY KEY (id),
-
+    PRIMARY KEY (id)
 );
