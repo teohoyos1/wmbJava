@@ -1,8 +1,6 @@
 package com.wmb.project.web.security;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
@@ -32,7 +30,7 @@ public class JWTUtil {
     }
 
     //Parser que se obtiene enviando la firma(KEY) y si está correcta se toma el cuerpo del token separado por cada uno de los objetos del token.
-    private Claims getClaims(String token){
+    private Claims getClaims(String token) {
         return Jwts.parser().setSigningKey(KEY).parseClaimsJws(token).getBody();
     }
 }
