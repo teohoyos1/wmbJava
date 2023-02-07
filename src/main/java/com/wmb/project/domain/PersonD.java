@@ -8,6 +8,7 @@ public class PersonD {
     private String emailD;
     private String phoneD;
     private String passwordD;
+    private Long chatIdD;
 
     public int getPersonId() {
         return personId;
@@ -63,5 +64,13 @@ public class PersonD {
 
     public void setPasswordD(String passwordD) {
         this.passwordD = passwordD;
+    }
+
+    public Long getChatIdD() {
+        return chatIdD;
+    }
+
+    public void setChatIdD(Long chatIdD) {
+        this.chatIdD = chatIdD;
     }
 }

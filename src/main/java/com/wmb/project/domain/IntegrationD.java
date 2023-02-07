@@ -1,15 +1,16 @@
 package com.wmb.project.domain;
 
 import com.wmb.project.persistence.entity.Person;
+import com.wmb.project.persistence.entity.Step;
 
 import java.time.LocalDateTime;
 
 public class IntegrationD {
     private int integrationId;
-    private String tokenD;
+    private Long chatIdD;
+    private String logIdD;
     private LocalDateTime creation_dateD;
-    private int idPersonD;
-    private Person personD;
+    private Step stepD;
 
     public int getIntegrationId() {
         return integrationId;
@@ -19,12 +20,12 @@ public class IntegrationD {
         this.integrationId = integrationId;
     }
 
-    public String getTokenD() {
-        return tokenD;
+    public Long getChatIdD() {
+        return chatIdD;
     }
 
-    public void setTokenD(String tokenD) {
-        this.tokenD = tokenD;
+    public void setChatIdD(Long chatIdD) {
+        this.chatIdD = chatIdD;
     }
 
     public LocalDateTime getCreation_dateD() {
@@ -35,19 +36,19 @@ public class IntegrationD {
         this.creation_dateD = creation_dateD;
     }
 
-    public int getIdPersonD() {
-        return idPersonD;
+    public String getLogIdD() {
+        return logIdD;
     }
 
-    public void setIdPersonD(int idPersonD) {
-        this.idPersonD = idPersonD;
+    public void setLogIdD(String logIdD) {
+        this.logIdD = logIdD;
     }
 
-    public Person getPersonD() {
-        return personD;
+    public Step getStepD() {
+        return stepD;
     }
 
-    public void setPersonD(Person personD) {
-        this.personD = personD;
+    public void setStepD(Step stepD) {
+        this.stepD = stepD;
     }
 }

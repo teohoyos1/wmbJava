@@ -8,21 +8,13 @@ public class Integration {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String token;
+    @Column(name = "chat_id", unique = true)
+    private Long chatId;
+    @Column(name = "log_id", unique = true)
+    private String logId;
     private LocalDateTime creation_date;
-    @Column(name = "id_person")
-    private Integer idPerson;
-    @ManyToOne
-    @JoinColumn(name = "id_person", insertable = false, updatable = false)
-    private Person person;
 
-    public Integer getIdPerson() {
-        return idPerson;
-    }
-
-    public void setIdPerson(Integer idPerson) {
-        this.idPerson = idPerson;
-    }
+    private Step step;
 
     public Integer getId() {
         return id;
@@ -32,12 +24,12 @@ public class Integration {
         this.id = id;
     }
 
-    public String getToken() {
-        return token;
+    public Long getChatId() {
+        return chatId;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setChatId(Long chatId) {
+        this.chatId = chatId;
     }
 
     public LocalDateTime getCreation_date() {
@@ -48,12 +40,19 @@ public class Integration {
         this.creation_date = creation_date;
     }
 
-    public Person getPerson() {
-        return person;
+    public String getLogId() {
+        return logId;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setLogId(String logId) {
+        this.logId = logId;
     }
 
+    public Step getStep() {
+        return step;
+    }
+
+    public void setStep(Step step) {
+        this.step = step;
+    }
 }

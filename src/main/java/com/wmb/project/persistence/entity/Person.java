@@ -15,11 +15,11 @@ public class Person {
     private String phone;
     private String password;
 
-    @OneToMany(mappedBy = "person")
-    private List<Wallet> wallet;
+    @Column(name = "chat_id", unique = true)
+    private Long chatId;
 
     @OneToMany(mappedBy = "person")
-    private List<Integration> integration;
+    private List<Wallet> wallet;
 
     public Integer getId() {
         return id;
@@ -85,11 +85,11 @@ public class Person {
         this.wallet = wallet;
     }
 
-    public List<Integration> getIntegration() {
-        return integration;
+    public Long getChatId() {
+        return chatId;
     }
 
-    public void setIntegration(List<Integration> integration) {
-        this.integration = integration;
+    public void setChatId(Long chatId) {
+        this.chatId = chatId;
     }
 }

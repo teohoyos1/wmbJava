@@ -13,10 +13,10 @@ import java.util.List;
 public interface IntegrationMapper {
     @Mappings({
             @Mapping(source = "id", target = "integrationId"),
-            @Mapping(source = "token", target = "tokenD"),
+            @Mapping(source = "chatId", target = "chatIdD"),
+            @Mapping(source = "logId", target = "logIdD"),
             @Mapping(source = "creation_date", target = "creation_dateD"),
-            @Mapping(source = "idPerson", target = "idPersonD"),
-            @Mapping(source = "person", target = "personD"),
+            @Mapping(source = "step", target = "stepD"),
     })
     IntegrationD toIntegrationD(Integration integration);
     List<IntegrationD> toIntegrationDList(List<Integration> integrationList);

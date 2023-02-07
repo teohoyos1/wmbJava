@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS Person
 	email varchar (100) NOT NULL,
 	phone varchar (50) NOT NULL,
 	password varchar (60) NOT NULL,
+	chat_id bigint,
     PRIMARY KEY (id)
 );
 
@@ -68,8 +69,10 @@ CREATE TABLE IF NOT EXISTS Movement_wallet
 CREATE TABLE IF NOT EXISTS Integration
 (
     id serial NOT NULL,
-    token varchar (100) NOT NULL,
-	creation_date timestamp without time zone NOT NULL,
+    chat_id bigint,
+    log_id varchar (200),
+    creation_date timestamp without time zone NOT NULL,
+    step varchar (100),
 	id_person INTEGER NOT NULL,
     PRIMARY KEY (id),
 	CONSTRAINT fk_person
