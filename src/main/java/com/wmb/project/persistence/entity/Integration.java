@@ -14,7 +14,7 @@ public class Integration {
     private String logId;
     private LocalDateTime creation_date;
 
-    private Step step;
+    private String step;
 
     public Integer getId() {
         return id;
@@ -48,11 +48,11 @@ public class Integration {
         this.logId = logId;
     }
 
-    public Step getStep() {
+    public String getStep() {
         return step;
     }
 
-    public void setStep(Step step) {
+    public void setStep(String step) {
         this.step = step;
     }
 }

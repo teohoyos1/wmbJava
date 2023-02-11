@@ -20,6 +20,8 @@ public interface PersonMapper {
             @Mapping(source = "email", target = "emailD"),
             @Mapping(source = "phone", target = "phoneD"),
             @Mapping(source = "password", target = "passwordD"),
+            @Mapping(source = "chatId", target = "chatIdD"),
+
     })
     PersonD toPersonD(Person person);
     List<PersonD> toPersonDList(List<Person> personList);

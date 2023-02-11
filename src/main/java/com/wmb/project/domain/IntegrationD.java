@@ -10,7 +10,7 @@ public class IntegrationD {
     private Long chatIdD;
     private String logIdD;
     private LocalDateTime creation_dateD;
-    private Step stepD;
+    private String stepD;
 
     public int getIntegrationId() {
         return integrationId;
@@ -44,11 +44,11 @@ public class IntegrationD {
         this.logIdD = logIdD;
     }
 
-    public Step getStepD() {
+    public String getStepD() {
         return stepD;
     }
 
-    public void setStepD(Step stepD) {
+    public void setStepD(String stepD) {
         this.stepD = stepD;
     }
 }
